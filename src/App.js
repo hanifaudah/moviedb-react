@@ -12,12 +12,14 @@ export class App extends Component {
     query:""
   }
 
-  // componentDidUpdate() {
-  //   axios.get(this.state.query)
+  //Test URL
+  // componentDidMount() {
+  //   axios.get("http://api.themoviedb.org/3/search/movie?api_key=95368f360e3dc457d2f213e11967e205&query=spiderman")
   //   .then(res => this.setState({movies: res.data.results}))
   // }
-  componentDidMount() {
-    axios.get("http://api.themoviedb.org/3/search/movie?api_key=95368f360e3dc457d2f213e11967e205&query=spiderman")
+
+  componentDidUpdate() {
+    axios.get(this.state.query)
     .then(res => this.setState({movies: res.data.results}))
   }
 
