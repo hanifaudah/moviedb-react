@@ -1,26 +1,40 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import axios from 'axios';
+import Nav from "./components/Nav.js"
+import MovieList from "./components/MovieList.js"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+export class App extends Component {
+  state = {
+    movies: [],
+    query:""
+  }
+
+  // componentDidUpdate() {
+  //   axios.get(this.state.query)
+  //   .then(res => this.setState({movies: res.data.results}))
+  // }
+  componentDidMount() {
+    axios.get("http://api.themoviedb.org/3/search/movie?api_key=95368f360e3dc457d2f213e11967e205&query=spiderman")
+    .then(res => this.setState({movies: res.data.results}))
+  }
+
+  changeQuery = (q) => {
+    this.setState({query:"http://api.themoviedb.org/3/search/movie?api_key=95368f360e3dc457d2f213e11967e205&query="+ q});
+    console.log(this.state.query);
+  }
+
+  render() {
+    return (
+      <div>
+        <Nav changeQuery={this.changeQuery}/>
+        <MovieList movies={this.state.movies}/>
+      </div>
+    )
+  }
 }
 
-export default App;
+export default App
+

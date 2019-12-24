@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,18 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+.btnDefault {
+  border:none;
+  outline:none;
+  border-radius:20px;
+  padding:.5em 1.4em;
+  background-color: rgba(180,180,180,.5);
+  transition:all .2s;
+}
+
+.btnDefault:hover {
+  box-shadow:0 0 10px rgba(120,120,120,.8);
+  transition:all .2s;
 }
