@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/moviedb-react/static/css/main.7de8b8f9.chunk.css",
+    "main.js": "/moviedb-react/static/js/main.71b9b931.chunk.js",
+    "main.js.map": "/moviedb-react/static/js/main.71b9b931.chunk.js.map",
+    "runtime-main.js": "/moviedb-react/static/js/runtime-main.f0d639f9.js",
+    "runtime-main.js.map": "/moviedb-react/static/js/runtime-main.f0d639f9.js.map",
+    "static/css/2.17e5ed98.chunk.css": "/moviedb-react/static/css/2.17e5ed98.chunk.css",
+    "static/js/2.a060c9c6.chunk.js": "/moviedb-react/static/js/2.a060c9c6.chunk.js",
+    "static/js/2.a060c9c6.chunk.js.map": "/moviedb-react/static/js/2.a060c9c6.chunk.js.map",
+    "index.html": "/moviedb-react/index.html",
+    "precache-manifest.92b42f5b76d52bd8dbe123d75438f3bc.js": "/moviedb-react/precache-manifest.92b42f5b76d52bd8dbe123d75438f3bc.js",
+    "service-worker.js": "/moviedb-react/service-worker.js",
+    "static/css/2.17e5ed98.chunk.css.map": "/moviedb-react/static/css/2.17e5ed98.chunk.css.map",
+    "static/css/main.7de8b8f9.chunk.css.map": "/moviedb-react/static/css/main.7de8b8f9.chunk.css.map",
+    "static/js/2.a060c9c6.chunk.js.LICENSE": "/moviedb-react/static/js/2.a060c9c6.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f0d639f9.js",
+    "static/css/2.17e5ed98.chunk.css",
+    "static/js/2.a060c9c6.chunk.js",
+    "static/css/main.7de8b8f9.chunk.css",
+    "static/js/main.71b9b931.chunk.js"
+  ]
+}
