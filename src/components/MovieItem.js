@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import '../App.css';
+import {Link} from "react-router-dom";
 
 export class MovieItem extends Component {
     render() {
@@ -9,7 +10,7 @@ export class MovieItem extends Component {
                 <img alt="" src={"http://image.tmdb.org/t/p/w200" + movie.poster_path}></img>
                 <h4 style={{marginTop:"1em"}}>{movie.title}</h4>
                 <p>{movie.release_date}</p>
-                <button className="btnDefault">Details</button>
+                <button className="btnDefault"><Link to={"/details/" + movie.id}>Details</Link></button>
             </div>
         )
     }
